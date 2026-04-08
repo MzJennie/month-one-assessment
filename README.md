@@ -36,8 +36,8 @@ Provide:
 - Open the `alb_dns_name` output in a browser to see the web app
 
 ## SSH Access
-- Bastion: `ssh -i jen-key.pem ec2-user@<bastion_public_ip>`
-- Web/DB from bastion: `ssh ec2-user@<private-ip>` (password: TechCorp@2024)
+- Bastion: `ssh -i key_pair.pem ec2-user@<bastion_public_ip>`
+- Web/DB from bastion: `ssh ec2-user@<private-ip>` (use the set password)
 
 ## Cleanup
 Run `terraform destroy` to remove all created resources.
